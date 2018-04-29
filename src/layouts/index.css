@@ -1,0 +1,16 @@
+@import url("./introspect.css");
+@import url("./burger-menu.css");
+
+.footer-icons {
+	font-size: 2rem;
+	display: flex;
+};
+
+.footer-icons span {
+	margin: 0.5rem;
+}
+
+#footer .footer-icons a:hover {
+	text-decoration: none;
+	color: #ffffff88;
+}
