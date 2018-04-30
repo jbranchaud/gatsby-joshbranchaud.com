@@ -8,14 +8,14 @@ const IndexPage = () =>
       <div className="inner">
         <h1>
           Latest Blog Post:{' '}
-          <span>
-            A free + fully responsive<br />
-            site template by TEMPLATED
-          </span>
+          <span>Create Quick JSON Data Dumps From PostgreSQL</span>
         </h1>
         <ul className="actions">
           <li>
-            <a href="#" className="button alt">
+            <a
+              href="https://hashrocket.com/blog/posts/create-quick-json-data-dumps-from-postgresql"
+              className="button special"
+            >
               Read It
             </a>
           </li>
@@ -29,11 +29,16 @@ const IndexPage = () =>
           <h2>About Me</h2>
         </header>
         <p>
-          I am a Chicago-based software developer at Hashrocket, a software
+          I am a Chicago-based software developer at{' '}
+          <a href="https://hashrocket.com">Hashrocket</a>, a software
           consultancy that has me primarily building apps with React, Rails and
           PostgreSQL. I spend my free-time biking around the city, organizing
-          with The People's Lobby for a better city and world, and playing board
-          games. My other interests include coffee, cats, and cocktails.
+          with{' '}
+          <a href="http://www.thepeopleslobbyusa.org/">
+            The People's Lobby
+          </a>{' '}
+          for a better city and world, and playing board games. My other
+          interests include coffee, cats, and cocktails.
         </p>
       </div>
     </section>
@@ -76,13 +81,13 @@ const IndexPage = () =>
     <section id="three">
       <div className="inner">
         <header>
-          <h2>Projects</h2>
+          <h2>Open-Source Work</h2>
         </header>
       </div>
       <div className="inner">
         <article>
           <div className="content">
-            <span className="icon fa-edit" />
+            <span className="icon far fa-keyboard" />
             <header>
               <h3>TIL</h3>
             </header>
@@ -104,7 +109,7 @@ const IndexPage = () =>
         </article>
         <article>
           <div className="content">
-            <span className="icon fa-react" />
+            <span className="icon fab fa-react" />
             <header>
               <h3>Reason of Life</h3>
             </header>
@@ -126,7 +131,7 @@ const IndexPage = () =>
         </article>
         <article>
           <div className="content">
-            <span className="icon fa-react" />
+            <span className="icon fab fa-react" />
             <header>
               <h3>react-logical</h3>
             </header>
@@ -147,25 +152,11 @@ const IndexPage = () =>
           </div>
         </article>
       </div>
-    </section>
-    {/* Footer */}
-    <section id="footer">
       <div className="inner">
-        <div className="footer-icons">
-          <a href="https://twitter.com/jbrancha">
-            <span className="icon fa-twitter" />
-          </a>
-          <a href="https://github.com/jbranchaud">
-            <span className="icon fa-github" />
-          </a>
-          <a href="https://www.instagram.com/jbranchaud">
-            <span className="icon fa-instagram" />
-          </a>
-        </div>
-        <div className="copyright">
-          © Untitled Design: <a href="https://templated.co/">TEMPLATED</a>.
-          Images <a href="https://unsplash.com/">Unsplash</a>
-        </div>
+        <h4>
+          Check out my other open-source work on{' '}
+          <a href="https://github.com/jbranchaud">GitHub</a>.
+        </h4>
       </div>
     </section>
   </div>;

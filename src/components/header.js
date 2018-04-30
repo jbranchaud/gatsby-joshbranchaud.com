@@ -1,30 +1,48 @@
 import React from 'react';
-import Link from 'gatsby-link';
+import Link, { navigateTo } from 'gatsby-link';
 import { slide as Menu } from 'react-burger-menu';
 
 const NavItems = () => {
-  return [
-    <a href="index.html">Home</a>,
-    <a href="generic.html">Generic</a>,
-    <a href="elements.html">Elements</a>,
-  ];
+  return (
+    <div>
+      <Link id="home" className="menu-item" to="/">
+        Home
+      </Link>
+      <Link id="about" className="menu-item" to="/about">
+        About
+      </Link>
+      <Link id="contact" className="menu-item" to="/contact">
+        Contact
+      </Link>
+    </div>
+  );
 };
 
-const BurgerMenu = ({ isOpen, handleMenuStateChange }) => {
+const navItems = [
+  { id: 'home', text: 'Home', to: '/' },
+  { id: 'about', text: 'About', to: '/about' },
+  { id: 'contact', text: 'Contact', to: '/contact' },
+];
+
+const BurgerMenu = ({ isOpen, handleMenuStateChange, toggleMenu }) => {
   return (
     <Menu right isOpen={isOpen} onStateChange={handleMenuStateChange}>
-      <a id="home" className="menu-item" href="/">
-        Home
-      </a>
-      <a id="about" className="menu-item" href="/about">
-        About
-      </a>
-      <a id="contact" className="menu-item" href="/contact">
-        Contact
-      </a>
-      <a onClick={() => {}} className="menu-item--small" href="">
-        Settings
-      </a>
+      {navItems.map(({ id, text, to }) => {
+        return (
+          <a
+            id={id}
+            key={id}
+            href="#"
+            onClick={e => {
+              e.preventDefault();
+              navigateTo(to);
+              toggleMenu();
+            }}
+          >
+            {text}
+          </a>
+        );
+      })}
     </Menu>
   );
 };
@@ -57,16 +75,21 @@ class Header extends React.Component {
         <BurgerMenu
           isOpen={this.state.menuStatus === 'open'}
           handleMenuStateChange={this.handleMenuStateChange}
+          toggleMenu={this.toggleMenu}
         />
         <header id="header">
           <div className="inner">
-            <a href="index.html" className="logo">
+            <a to="/" className="logo">
               Josh Branchaud
             </a>
             <nav id="nav">
-              <a href="index.html">Home</a>
-              <a href="generic.html">Generic</a>
-              <a href="elements.html">Elements</a>
+              {navItems.map(({ id, text, to }) => {
+                return (
+                  <Link id={id} key={id} to={to}>
+                    {text}
+                  </Link>
+                );
+              })}
             </nav>
           </div>
         </header>
