@@ -48,30 +48,34 @@ const IndexPage = () =>
         <article>
           <div className="content">
             <header>
-              <h3>Pellentesque adipis</h3>
+              <h3>Frontend</h3>
             </header>
-            <div className="image fit">
+            {/*<div className="image fit">
               <img src="images/pic01.jpg" alt />
-            </div>
+            </div>*/}
             <p>
-              Cumsan mollis eros. Pellentesque a diam sit amet mi magna
-              ullamcorper vehicula. Integer adipiscin sem. Nullam quis massa sit
-              amet lorem ipsum feugiat tempus.
+              I build user-focussed interfaces using{' '}
+              <a href="https://reactjs.org/">React</a> and many tools from the
+              its cutting edge ecosystem. I employ modern CSS to make these
+              interfaces look good across devices.
             </p>
           </div>
         </article>
         <article className="alt">
           <div className="content">
             <header>
-              <h3>Morbi interdum mol</h3>
+              <h3>Backend</h3>
             </header>
-            <div className="image fit">
+            {/*<div className="image fit">
               <img src="images/pic02.jpg" alt />
-            </div>
+            </div>*/}
             <p>
-              Cumsan mollis eros. Pellentesque a diam sit amet mi magna
-              ullamcorper vehicula. Integer adipiscin sem. Nullam quis massa sit
-              amet lorem ipsum feugiat tempus.
+              I primarily employ{' '}
+              <a href="http://rubyonrails.org/">Ruby on Rails</a> and{' '}
+              <a href="https://www.postgresql.org/">PostgreSQL</a> to quickly
+              build out robust backend services that power these frontend user
+              interfaces. I also reach for Elixir/Phoenix or Go when the need
+              arises.
             </p>
           </div>
         </article>
