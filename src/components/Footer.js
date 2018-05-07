@@ -16,8 +16,13 @@ const Footer = () => {
           </a>
         </div>
         <div className="copyright">
-          © Untitled Design: <a href="https://templated.co/">TEMPLATED</a>.
-          Images <a href="https://unsplash.com/">Unsplash</a>
+          <div>© 2018 Josh Branchaud</div>
+          <div>
+            Untitled Design: <a href="https://templated.co/">TEMPLATED</a>
+          </div>
+          <div>
+            Images <a href="https://unsplash.com/">Unsplash</a>
+          </div>
         </div>
       </div>
     </section>
