@@ -85,7 +85,7 @@ const IndexPage = () =>
     <section id="three">
       <div className="inner">
         <header>
-          <h2>Open-Source Work</h2>
+          <h2>Open Source Work</h2>
         </header>
       </div>
       <div className="inner">
