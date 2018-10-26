@@ -1,22 +1,6 @@
 import React from 'react';
-import Link, { navigateTo } from 'gatsby-link';
+import { Link, navigate } from 'gatsby';
 import { slide as Menu } from 'react-burger-menu';
-
-const NavItems = () => {
-  return (
-    <div>
-      <Link id="home" className="menu-item" to="/">
-        Home
-      </Link>
-      <Link id="about" className="menu-item" to="/about">
-        About
-      </Link>
-      <Link id="contact" className="menu-item" to="/contact">
-        Contact
-      </Link>
-    </div>
-  );
-};
 
 const navItems = [
   { id: 'home', text: 'Home', to: '/' },
@@ -36,7 +20,7 @@ const BurgerMenu = ({ isOpen, handleMenuStateChange, toggleMenu }) => {
             href="#"
             onClick={e => {
               e.preventDefault();
-              navigateTo(to);
+              navigate(to);
               toggleMenu();
             }}
           >
@@ -71,6 +55,7 @@ class Header extends React.Component {
 
   render() {
     const { siteTitle } = this.props;
+
     return (
       <div>
         <BurgerMenu
@@ -80,9 +65,9 @@ class Header extends React.Component {
         />
         <header id="header">
           <div className="inner">
-            <a to="/" className="logo">
+            <Link to="/" className="logo">
               Josh Branchaud
-            </a>
+            </Link>
             <nav id="nav">
               {navItems.map(({ id, text, to }) => {
                 return (

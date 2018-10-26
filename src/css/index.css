@@ -6,7 +6,7 @@
 	display: flex;
 };
 
-.footer-icons span {
+.footer-icons a {
 	margin: 0.5rem;
 }
 
