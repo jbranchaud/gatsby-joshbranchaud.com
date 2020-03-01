@@ -1,8 +1,8 @@
-import React from 'react';
+import React from 'react'
 
-import Layout from '../components/Layout';
+import Layout from '../components/Layout'
 
-const IndexPage = () =>
+const IndexPage = () => (
   <Layout>
     <div>
       {/* Banner */}
@@ -32,13 +32,18 @@ const IndexPage = () =>
           </header>
           <p>
             I am a Chicago-based software developer at{' '}
-            <a href="https://hashrocket.com">Hashrocket</a>, a software
-            consultancy that has me primarily building apps with React, Rails
-            and PostgreSQL. I spend my free-time biking around the city,
-            organizing with{' '}
-            <a href="http://www.thepeopleslobbyusa.org/">
-              The People's Lobby
-            </a>{' '}
+            <a href="https://www.landscapehub.com/">LandscapeHub</a>, where I
+            build technology that ultimately helps more trees get planted. I am
+            also a software consultant (
+            <a href="mailto:jbranchaud@gmail.com">
+              so, let me know how I can help you with your product
+            </a>
+            ). I previous worked at{' '}
+            <a href="https://hashrocket.com">Hashrocket</a>. I like working on
+            products where I can have a big impact. I primarily build with
+            React, Ruby on Rails and PostgreSQL. I spend my free-time biking
+            around the city, organizing with{' '}
+            <a href="http://www.thepeopleslobbyusa.org/">The People's Lobby</a>{' '}
             for a better city and world, and playing board games. My other
             interests include coffee, cats, and cocktails.
           </p>
@@ -166,6 +171,7 @@ const IndexPage = () =>
         </div>
       </section>
     </div>
-  </Layout>;
+  </Layout>
+)
 
-export default IndexPage;
+export default IndexPage
