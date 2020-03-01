@@ -61,7 +61,7 @@ const IndexPage = () => (
               <img src="images/pic01.jpg" alt />
             </div>*/}
               <p>
-                I build user-focussed interfaces using{' '}
+                I build user-focused interfaces using{' '}
                 <a href="https://reactjs.org/">React</a> and many tools from the
                 its cutting edge ecosystem. I employ modern CSS to make these
                 interfaces look good across devices.
